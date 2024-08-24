@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Ejercicio1
 {
-    public partial class Form1 : Form
+    public partial class fVerResultados : Form
     {
-        public Form1()
+        public fVerResultados()
         {
             InitializeComponent();
+        }
+
+        private void fVerResultados_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

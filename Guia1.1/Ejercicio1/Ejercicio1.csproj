@@ -46,14 +46,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Consecionaria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Consecionaria.Designer.cs">
+      <DependentUpon>Consecionaria.cs</DependentUpon>
     </Compile>
+    <Compile Include="fVerResultados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fVerResultados.Designer.cs">
+      <DependentUpon>fVerResultados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Moto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Consecionaria.resx">
+      <DependentUpon>Consecionaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fVerResultados.resx">
+      <DependentUpon>fVerResultados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

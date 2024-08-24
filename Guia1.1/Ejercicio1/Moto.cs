@@ -25,17 +25,26 @@ namespace Ejercicio1
 
         public double CalcularDepreciacionLineal(int añoACalcular, int vidaUtil)
         {
-            return 0;
+            int añosDeUso = añoACalcular - this.modelo;
+            double valorActualizado = this.valorFabricacion - (valorFabricacion * (añosDeUso / vidaUtil));
+            return valorActualizado;
         }
 
         public double CalcularDepreciacionAnual(int añoACalcular, double tasaDepreciacion)
         {
-            return 0;
+            int añosDeUso = añoACalcular - this.modelo;
+            double valorActualizado = this.valorFabricacion*Math.Pow(1-tasaDepreciacion,añosDeUso);
+            return valorActualizado;
         }
 
-        public string VerDescripcion()
+        public string VerDescripcion(double depLineal, double depAnual)
         {
-            return "";
+            string marcaModelo = "Marca: " + this.marca + ". Modelo: " + this.modelo;
+            string valorFabricacion = "Valor fabricación: $" + this.valorFabricacion;
+            string depreciacionLineal = "Depreciación lineal: $" + depLineal;
+            string depreciacionAnual = "Depreciación lineal: $" + depAnual;
+
+            return marcaModelo + "\n" + valorFabricacion + "\n" + depreciacionLineal + "\n" + depreciacionAnual;
         }
     }
 }
